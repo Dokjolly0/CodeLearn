@@ -1,0 +1,159 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+  }
+  
+  .hero-section {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 80px 0;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+  }
+  
+  .hero-title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  
+  .hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 32px;
+    opacity: 0.9;
+  }
+  
+  .hero-actions {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .features-section {
+    padding: 64px 0;
+    background-color: var(--background-color);
+  }
+  
+  .quick-start-section {
+    padding: 64px 0;
+    background-color: var(--secondary-color);
+  }
+  
+  .quick-start-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+  
+  .quick-start-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 6.4px 14.4px 0 rgba(0, 0, 0, 0.132), 0 1.2px 3.6px 0 rgba(0, 0, 0, 0.108);
+  }
+  
+  .code-example {
+    margin-top: 32px;
+  }
+  
+  .code-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: -1px;
+  }
+  
+  .code-tab {
+    background: transparent;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--text-light);
+    border-bottom: 2px solid transparent;
+  }
+  
+  .code-tab.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+    font-weight: 600;
+  }
+  
+  .code-container {
+    position: relative;
+    border: 1px solid var(--border-color);
+    border-radius: 0 4px 4px 4px;
+    background-color: #f5f5f5;
+    padding: 16px;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 14px;
+  }
+  
+  .copy-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 2px;
+    padding: 4px;
+    cursor: pointer;
+    color: var(--text-light);
+  }
+  
+  .copy-button:hover {
+    color: var(--primary-color);
+    background: white;
+  }
+  
+  .learning-path-section {
+    padding: 64px 0;
+  }
+  
+  .path-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+  }
+  
+  .path-card {
+    padding: 24px;
+  }
+  
+  .path-card h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+  
+  .path-card p {
+    margin-bottom: 16px;
+    color: var(--text-light);
+  }
+  
+  .path-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .path-link:hover {
+    text-decoration: none;
+  }
+  
+  .path-link::after {
+    content: "→";
+    margin-left: 4px;
+    transition: transform 0.2s ease;
+  }
+  
+  .path-link:hover::after {
+    transform: translateX(4px);
+  }

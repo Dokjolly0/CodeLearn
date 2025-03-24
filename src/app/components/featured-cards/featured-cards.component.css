@@ -1,0 +1,43 @@
+.featured-cards {
+    margin-top: 24px;
+  }
+  
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  
+  .language-card {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+  }
+  
+  .language-card:hover {
+    text-decoration: none;
+  }
+  
+  .card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .language-card h3 {
+    margin-bottom: 8px;
+    color: var(--text-color);
+  }
+  
+  .language-card p {
+    color: var(--text-light);
+    margin-top: auto;
+  }
