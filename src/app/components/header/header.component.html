@@ -1,6 +1,7 @@
 <header class="site-header">
   <div class="container">
     <div class="header-content">
+      <!-- Logo -->
       <div class="logo">
         <a href="/">
           <span class="logo-icon">&lt;&gt;</span>
@@ -8,10 +9,13 @@
         </a>
       </div>
 
-      <!-- Bottone menu hamburger -->
-      <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+      <!-- Search + Toggle Menu -->
+      <div class="mobile-controls">
+        <app-search></app-search>
+        <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+      </div>
 
-      <!-- Menu di navigazione -->
+      <!-- Menu -->
       <nav
         class="main-nav"
         [class.open]="menuOpen"
@@ -26,8 +30,8 @@
         </ul>
       </nav>
 
+      <!-- Azioni Header (Desktop) -->
       <div class="header-actions">
-        <app-search></app-search>
         <app-language-selector></app-language-selector>
         <button class="btn btn-primary">Accedi</button>
       </div>

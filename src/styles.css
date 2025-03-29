@@ -9,6 +9,12 @@
   --success-color: #107c10;
   --error-color: #a80000;
   --primary-navbar-color: #2c2a33;
+
+  /*Navbar*/
+  --navbar-hover-bg: rgba(255, 255, 255, 0.2); /* Hover link navbar */
+  --mobile-menu-bg: #25232a; /* Sfondo menu mobile */
+  --mobile-menu-border: #3a3840; /* Bordo menu mobile */
+  --menu-toggle-color: white; /* Colore icona menu */
 }
 
 * {
