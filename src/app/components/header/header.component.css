@@ -66,3 +66,46 @@
   background-color: var(--secondary-color);
   color: white;
 }
+
+.menu-toggle {
+  display: none; /* Nascondi su desktop */
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Mostra solo su mobile */
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+  }
+
+  .main-nav ul {
+    display: none; /* Nascondi menu di default */
+    flex-direction: column;
+    background: var(--primary-navbar-color);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 16px 0;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .main-nav.open ul {
+    display: flex; /* Mostra il menu quando è aperto */
+  }
+
+  .main-nav a {
+    display: block;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .main-nav a:last-child {
+    border-bottom: none;
+  }
+}

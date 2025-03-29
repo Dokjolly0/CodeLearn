@@ -8,7 +8,16 @@
         </a>
       </div>
 
-      <nav class="main-nav">
+      <!-- Bottone menu hamburger -->
+      <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+
+      <!-- Menu di navigazione -->
+      <nav
+        class="main-nav"
+        [class.open]="menuOpen"
+        role="navigation"
+        aria-label="Menu principale"
+      >
         <ul>
           <li><a href="/languages">Linguaggi</a></li>
           <li><a href="/tutorials">Tutorial</a></li>

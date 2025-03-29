@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { LanguageSelectorComponent } from '../language-selector/language-selector.component';
 import { SearchComponent } from '../search/search.component';
 
@@ -8,5 +8,12 @@ import { SearchComponent } from '../search/search.component';
   imports: [SearchComponent, LanguageSelectorComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  menuOpen = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+}
